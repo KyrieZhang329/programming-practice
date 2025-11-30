@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+void SelectionSort(int *arr,int n)
 {
-    int arr[16]={9, 11, 13, 4, 6, 5, 7, 12, 1, 10, 15, 2, 8, 3, 16, 14};
-    int size=sizeof(arr)/sizeof(arr[0]);
     int left=0;
-    int right=size-1;
+    int right=n-1;
     while (left < right) 
     {
         int minIndex = left;
@@ -35,6 +33,13 @@ int main()
         left++;
         right--;
     }
+}
+
+int main() 
+{
+    int arr[16]={9, 11, 13, 4, 6, 5, 7, 12, 1, 10, 15, 2, 8, 3, 16, 14};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    SelectionSort(arr,size);
     for (int i = 0; i < size; i++) 
         cout << arr[i] << " ";
     return 0;

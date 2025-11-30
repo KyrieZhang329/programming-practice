@@ -125,7 +125,14 @@ transform(text.begin(), text.end(), text.begin(),
 
 初始化：**vector<int> v(n,k)**  创建一个长度为n的vector，每个元素值为k
 
-同时vector也可以用类似arr的{}初始化，以及复制初始化（在v后的括号内输入一个vector数组名）
+同时vector也可以用类似arr的{}初始化（C++11），以及复制初始化（在v后的括号内输入一个vector数组名）
+
+迭代器初始化：用另一个容器来初始化vector
+
+```c++
+int arr[] = {10,20,30,40};
+vector<int> v16(arr, arr+4);
+```
 
 vector二维数组创建
 
@@ -152,6 +159,8 @@ vector<vector<int>> v(n, vector<int>(n));
 **v.push_back(k)** 在尾部添加元素k
 
 **v.pop_back()** 删除尾部元素
+
+**v.erase(pos)** 删除迭代器pos处的元素，返回下一个元素迭代器，后面元素依次前移
 
 ##### 迭代器（元素指针）
 
