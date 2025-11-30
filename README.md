@@ -4,4 +4,4 @@ These practice questions can be provided for beginners in programming to use and
 
 
 
-**tips: Every code was written C++ language, and the C++ version should be laster than C++11.**
+**tips: Every code was written by C++ language, and the C++ version should be laster than C++11.**
